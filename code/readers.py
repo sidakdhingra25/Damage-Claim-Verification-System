@@ -135,10 +135,7 @@ def encode_image_base64(path: str) -> tuple[str, str]:
 
     extension_hint = _extension_format_hint(resolved.suffix)
     if extension_hint is not None and extension_hint != detected_format:
-        print(
-            f"Warning: {path} uses a {resolved.suffix} extension but file content "
-            f"is {detected_format.upper()}."
-        )
+        pass  # extension mismatch is handled; no need to print
 
     image_bytes, mime_type = _normalize_image_bytes(raw, detected_format, path)
     b64_data = base64.b64encode(image_bytes).decode("ascii")

@@ -10,7 +10,7 @@ if not GEMINI_API_KEY:
         "Export it before running the pipeline, e.g. set GEMINI_API_KEY=your_key_here"
     )
 
-GEMINI_MODEL = os.environ.get("GEMINI_MODEL", "gemini-3.1-flash-lite")
+GEMINI_MODEL = os.environ.get("GEMINI_MODEL", "gemini-3.5-flash-lite")
 MAX_IMAGES = 5
 MAX_RETRIES = 2
 

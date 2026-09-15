@@ -1,4 +1,4 @@
-# HackerRank Orchestrate
+<!-- # HackerRank Orchestrate
 
 Starter repository for the **HackerRank Orchestrate** 24-hour hackathon.
 
@@ -158,4 +158,4 @@ Before submitting, confirm:
 
 After submission, the AI Judge may ask about your approach, implementation decisions, model usage, evaluation strategy, and how you used AI while building the solution.
 
-Be prepared to explain your solution in detail.
+Be prepared to explain your solution in detail. -->
