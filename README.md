@@ -15,7 +15,7 @@ This is the backend intelligence engine for **ClaimAI**, a system designed to in
 Naive AI agents often fall victim to hallucinations by letting a single prompt dictate a final payout decision. This backend solves that using a strict two-stage pipeline:
 
 ### 1. The Vision Extractor (`vision.py`)
-- We pass the user's submitted images and claim text to Google's **Gemini 1.5 Flash Vision API**.
+- We pass the user's submitted images and claim text to Google's **Gemini 3.5 Flash Lite Vision API**.
 - The LLM is heavily restricted via a strict JSON schema. It is explicitly instructed to act *only* as a visual extraction tool (e.g., identifying the object, locating the part, assessing severity, and returning boolean evidence checks).
 - It does **not** make the final "approve or deny" decision.
 
