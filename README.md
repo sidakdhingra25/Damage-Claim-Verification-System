@@ -3,6 +3,9 @@
 **Backend Repository:** [Damage-Claim-Verification-System](https://github.com/sidakdhingra25/Damage-Claim-Verification-System)
 **Frontend Repository:** [damage-claim-frontend](https://github.com/sidakdhingra25/damage-claim-frontend)
 
+> [!NOTE]
+> **Live Demo Cold Starts:** This backend API is deployed on Render's free tier, which puts the server to sleep after 15 minutes of inactivity. When testing the live application, the very first request may take 40–50 seconds to complete while the server wakes up. All subsequent requests will resolve instantly.
+
 This is the backend intelligence engine for **ClaimAI**, a system designed to instantly analyze and verify property and vehicle damage claims. Built with Python and FastAPI, this repository houses a robust two-stage AI pipeline that separates visual extraction from deterministic business logic.
 
 ---
