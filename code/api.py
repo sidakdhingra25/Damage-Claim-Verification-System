@@ -29,6 +29,11 @@ history_df = load_user_history()
 requirements_df = load_evidence_requirements()
 client = create_genai_client()
 
+@app.get("/ping")
+async def ping():
+    """Endpoint to wake up the Render server from a cold start."""
+    return {"status": "awake"}
+
 @app.post("/verify-claim")
 async def verify_claim(
     image: UploadFile = File(...),
